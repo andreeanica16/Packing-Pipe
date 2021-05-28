@@ -23,8 +23,8 @@ To achieve this, we used **TIMER 2**. At equal intervals, through the interrupt 
 
 The current state will be state in a global variable called *state*. All the 6 possible are:
 
-1. ***START_STATE***: initialization state, the actuators are brought to their START positions.
-2. ***POSITION_TO_SENSOR_STATE***: state in which the servomotor controlling the upper plate brings the object from the starting position to the place where the color of the object will be scanned.
+1. **START_STATE**: initialization state, the actuators are brought to their START positions.
+2. **POSITION_TO_SENSOR_STATE**: state in which the servomotor controlling the upper plate brings the object from the starting position to the place where the color of the object will be scanned.
 3. **SENSOR_STATE**: state in which the color of the object is scanned and the color is determined. The LED strip will be colored according to the identified color, if the object conforms. If the object is non-compliant, an audible error signal will signal the appearance of a scrap, which will be thrown in the scrap container.
 4. **POSITION_COLOR_PACK_STATE**: state in which the servomotor corresponding to the lower plate positions the collection of objects corresponding to the color identified under the outlet of the object from the upper level to the lower level.
 5. **POSITION_OBJECT_FINAL_STATE**: state in which the servomotor afferent to the upper plate brings the object into the transition mouth between the two levels.
